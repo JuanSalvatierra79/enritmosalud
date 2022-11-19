@@ -114,6 +114,38 @@ main{
   border-radius: 100%;
 }
 
+
+.container-fluid{
+  list-style-type: none;
+  background-color: black;
+  padding: 0;
+  color: darkgoldenrod;
+  opacity: 1;
+}
+
+.navbar-nav{
+  display: flex;
+  background-color: black;
+}
+
+.nav-item{
+  display: inline-block;
+  padding: .5rem;
+}
+
+.nav-link{
+  color: darkgoldenrod;
+  text-decoration:none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-item a:hover {
+  color:white;
+  background-color: darkgoldenrod;
+  border-radius: 100%;
+}
+
 .social{
   display: flex;  
   justify-content: space-between;
@@ -128,6 +160,10 @@ main{
 
 .social img{
   background-color: darkgoldenrod;
+}
+
+.social li{
+  list-style-type: none;
 }
 
 /* comienzo styles programas */
@@ -148,7 +184,6 @@ main{
   .container img:hover{
     transform:scale(1.2,1.2)
   }
-
 
 section div { 
   border: solid 1px;
