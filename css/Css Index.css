@@ -166,6 +166,14 @@ main{
   list-style-type: none;
 }
 
+@media screen and (max-width: 480px){
+  .social ul {
+    display: flex;
+    flex-direction: row;
+    padding-left:44%;
+  }
+  }
+
 /* comienzo styles programas */
 
 .container{
