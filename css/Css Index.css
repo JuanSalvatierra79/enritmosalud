@@ -359,8 +359,40 @@ text-align: center;
       "."
       ".";
   }
+  }
 
+  /* comienzo styles sumate */
+
+  .carousel-item img{ 
+    width: 431px;
+    height: 400px;
+  }
+
+  .carousel{
+    margin-bottom: 100px;
+    padding: 60px;
+  }
+
+  .textosumate{
+    background-color: black;
+    opacity: 0.5;    
+    font-weight: bold;
+    color:whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    }
+
+  .carousel-caption{
+    width: 500px;
+    height: 70px;
+    margin-left: 180px;
 
   }
+
+   /* comienzo styles media query sumate */
+
+   @media screen and (max-width: 480px){
+    
+   }
+
 
   /* comienzo styles contacto */
