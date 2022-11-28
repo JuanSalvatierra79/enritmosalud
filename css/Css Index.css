@@ -392,7 +392,64 @@ text-align: center;
 
    @media screen and (max-width: 480px){
     
+    .carousel-inner img{
+      left:0;
+      top:0;
+      height:50%;
+      width:50%;     
+    }
+
    }
 
 
   /* comienzo styles contacto */
+
+  .contacto{
+    margin-top: 50px;
+    width: 450px;
+    border-color: black;
+  }
+
+  .mapa{
+    margin-top: 50px;
+    margin-right: 50px;
+    width: fit-content;
+    border-color: black;
+  }
+
+  .container6 {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-items: center;
+    
+  }
+  
+  /* comienzo styles media query contacto */
+
+  @media screen and (max-width: 480px){
+    .container6 {  display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: column;
+      grid-template-areas:
+        "."
+        ".";
+      }
+    
+    .mapa iframe{
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;    
+    }
+  } 
+    
+    
