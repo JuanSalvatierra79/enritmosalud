@@ -1,0 +1,21 @@
+.social{
+        display: flex;  
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        & ul{
+            display: flex;
+            flex-direction: row;
+            & li{
+                list-style-type: none;
+                & img{
+                background-color: $secondarycolor;
+    }
+    }
+    }
+    }
+    
+.social p{
+        color: $secondarycolor;
+        flex: auto;
+        }

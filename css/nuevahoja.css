@@ -1,0 +1,290 @@
+@charset "UTF-8";
+.Logo {
+  background-color: aliceblue;
+  background-image: url("../img/Rectangle 2.png"); }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+.container-fluid {
+  list-style-type: none;
+  background-color: #000000;
+  padding: 0;
+  color: darkgoldenrod;
+  opacity: 1; }
+
+.navbar-nav {
+  display: flex;
+  background-color: #000000; }
+
+.nav-item {
+  display: inline-block;
+  padding: .5rem; }
+
+.nav-link {
+  color: darkgoldenrod;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px; }
+
+.nav-item a:hover {
+  color: white;
+  background-color: darkgoldenrod;
+  border-radius: 100%; }
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  color: darkgoldenrod;
+  opacity: 1; }
+  .menu ul {
+    display: flex; }
+    .menu ul li {
+      display: inline-block;
+      padding: .5rem; }
+      .menu ul li li a {
+        color: darkgoldenrod;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px; }
+        .menu ul li li a li a:hover {
+          color: white;
+          background-color: darkgoldenrod;
+          border-radius: 100%; }
+
+.container2 p {
+  color: whitesmoke; }
+
+.container img:hover {
+  transform: scale(1.2, 1.2); }
+
+/* comienzo styles cards programas */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas: ". ." ". ." ". .";
+  margin-bottom: 30px;
+  justify-items: center; }
+  .container p {
+    text-align: left;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif; }
+    .container p img:hover {
+      transform: scale(1.2, 1.2); }
+
+section div {
+  border: solid 1px;
+  border-color: darkgoldenrod;
+  width: 450px;
+  padding: 8px; }
+  section div img {
+    width: 100%; }
+
+/*  card nutrición y sobre nosotros*/
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: ". ." ". .";
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-items: center; }
+
+/* comienzo carousel sumate */
+.carousel {
+  margin-bottom: 100px;
+  padding: 60px; }
+  .carousel .carousel-item img {
+    width: 431px;
+    height: 400px; }
+    .carousel .carousel-item img .carousel-caption {
+      width: 500px;
+      height: 70px;
+      margin-left: 180px; }
+
+/* comienzo card contacto */
+.contacto {
+  margin-top: 50px;
+  width: 450px;
+  border-color: #000000; }
+
+.mapa {
+  margin-top: 50px;
+  margin-right: 50px;
+  width: fit-content;
+  border-color: #000000; }
+
+.container6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: ". .";
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-items: center; }
+
+h1 {
+  font-size: 5vw;
+  color: darkgoldenrod; }
+
+h2 {
+  color: darkgoldenrod;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  text-align: center; }
+
+h3 {
+  color: darkgoldenrod; }
+
+/* texto nutrición */
+.frase {
+  text-align: center; }
+
+/* texto sobre nosotros */
+.frase2 {
+  text-align: center; }
+
+/* texto sumate */
+.textosumate {
+  background-color: #000000;
+  opacity: 0.5;
+  font-weight: bold;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif; }
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .social ul {
+    display: flex;
+    flex-direction: row; }
+    .social ul li {
+      list-style-type: none; }
+      .social ul li img {
+        background-color: darkgoldenrod; }
+
+.social p {
+  color: darkgoldenrod;
+  flex: auto; }
+
+/* styles media query menú */
+@media screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
+
+@media screen and (max-width: 480px) {
+  .social ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 44%; } }
+
+/* comienzo styles media query programas */
+@media screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "." "." "." "." "." "."; }
+  h2 {
+    align-items: center; }
+  .social p {
+    display: none; } }
+
+/* comienzo styles media query nutrición */
+@media screen and (max-width: 480px) {
+  .container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas: "." "." "." "." "." "."; }
+  h2 {
+    font-size: 25px;
+    text-align: center; }
+  h3 {
+    font-size: 25px; }
+  p {
+    font-size: 35px; }
+  .social p {
+    display: none; } }
+
+/* comienzo styles media query sobre nosotros */
+@media screen and (max-width: 480px) {
+  .container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas: "." "." "." "." "." "."; } }
+
+/* comienzo styles media query sumate */
+@media screen and (max-width: 480px) {
+  .carousel-item img {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  h5 {
+    font-size: 5px; }
+  p {
+    font-size: 15px; } }
+
+/* comienzo styles media query contacto */
+@media screen and (max-width: 480px) {
+  .container6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas: "." "."; }
+  .mapa iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000000;
+  font-family: "Roboto", sans-serif; }
+
+main {
+  flex-grow: 1; }
+
+.hero-image {
+  min-height: 110vh;
+  background-image: url("../img/crossfit2022.jpg");
+  background-repeat: no-repeat;
+  color: #000000; }
+  .hero-image div {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center; }

@@ -1,0 +1,45 @@
+
+h1 {
+    font-size: 5vw;
+    color: $secondarycolor;
+  }
+  
+h2{
+    color: $secondarycolor;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: $primaryfont;
+    font-size: 50px;
+    text-align: center;
+    }
+    
+h3{
+    color: $secondarycolor;
+    }
+    
+
+
+/* texto nutrición */
+
+.frase{
+text-align: center;
+}
+
+
+/* texto sobre nosotros */
+
+.frase2{
+text-align: center;
+}
+
+
+/* texto sumate */
+
+.textosumate{
+    background-color: $primarycolor;
+    opacity: 0.5;    
+    font-weight: bold;
+    color:whitesmoke;
+    font-family: $primaryfont;
+    }
+  

@@ -1,0 +1,109 @@
+@mixin cont(){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". .";
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-items: center;
+    }
+    .container2 p {
+        color: whitesmoke;   
+        }
+        .container img:hover{
+            transform:scale(1.2,1.2);
+} 
+
+
+/* comienzo styles cards programas */
+
+.container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+    ". ."
+    ". ."
+    ". ."; 
+    margin-bottom: 30px;
+    justify-items: center;
+    & p{
+        text-align: left;
+        color: aliceblue;
+        font-family: $primaryfont;
+        img:hover{
+            transform:scale(1.2,1.2)
+}
+}
+}
+
+section div { 
+border: solid 1px;
+border-color: $secondarycolor;
+width: 450px;
+padding: 8px;
+ img{
+width:100%
+}
+}
+
+
+/*  card nutrición y sobre nosotros*/
+  
+.container2{ 
+@include cont();
+}
+    
+
+
+/* comienzo carousel sumate */
+
+.carousel{
+    margin-bottom: 100px;
+    padding: 60px;
+    .carousel-item img{ 
+        width: 431px;
+        height: 400px;
+        .carousel-caption{
+            width: 500px;
+            height: 70px;
+            margin-left: 180px;
+        }
+    }  
+}
+  
+  
+  /* comienzo card contacto */
+
+.contacto{
+    margin-top: 50px;
+    width: 450px;
+    border-color: $primarycolor;
+  }
+  
+.mapa{
+    margin-top: 50px;
+    margin-right: 50px;
+    width: fit-content;
+    border-color: $primarycolor;
+  }
+  
+.container6 {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-items: center;
+    
+  }
+  
