@@ -187,6 +187,22 @@ h3 {
     flex-direction: row;
     justify-content: space-between; } }
 
+@media only screen and (max-width: 768px) {
+  .social ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 44%; }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "." "." "." "." "." "."; }
+  h2 {
+    align-items: center; }
+  .social p {
+    display: none; } }
+
 @media screen and (max-width: 480px) {
   .social ul {
     display: flex;
@@ -201,12 +217,30 @@ h3 {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px 10px;
     grid-template-areas: "." "." "." "." "." "."; }
-  h2 {
-    align-items: center; }
+  .p {
+    font-size: 20px; }
   .social p {
     display: none; } }
 
 /* comienzo styles media query nutrición */
+@media only screen and (max-width: 768px) {
+  .container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas: "." "." "." "." "." "."; }
+  h2 {
+    font-size: 25px;
+    text-align: center; }
+  h3 {
+    font-size: 25px; }
+  p {
+    font-size: 20px; }
+  .social p {
+    display: none; } }
+
 @media screen and (max-width: 480px) {
   .container2 {
     display: grid;
@@ -221,7 +255,7 @@ h3 {
   h3 {
     font-size: 25px; }
   p {
-    font-size: 35px; }
+    font-size: 20px; }
   .social p {
     display: none; } }
 
@@ -236,17 +270,45 @@ h3 {
     grid-template-areas: "." "." "." "." "." "."; } }
 
 /* comienzo styles media query sumate */
+@media only screen and (max-width: 768px) {
+  .carousel-item img {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  .textosumate h5 {
+    font-size: 15px;
+    color: whitesmoke; }
+  .textosumate p {
+    font-size: 15px;
+    color: whitesmoke; } }
+
 @media screen and (max-width: 480px) {
   .carousel-item img {
     margin: 0;
     padding: 0;
     width: 100%; }
-  h5 {
-    font-size: 5px; }
-  p {
-    font-size: 15px; } }
+  .textosumate h5 {
+    font-size: 15px;
+    color: whitesmoke; }
+  .textosumate p {
+    font-size: 15px;
+    color: whitesmoke; } }
 
 /* comienzo styles media query contacto */
+@media only screen and (max-width: 768px) {
+  .container6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas: "." "."; }
+  .mapa iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%; } }
+
 @media screen and (max-width: 480px) {
   .container6 {
     display: grid;
