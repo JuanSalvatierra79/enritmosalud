@@ -97,6 +97,16 @@ section div {
   margin-bottom: 30px;
   justify-items: center; }
 
+.textonutri {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  margin-left: 200px; }
+
+.sinbordes {
+  border: none;
+  border-color: black; }
+
 /* comienzo carousel sumate */
 .carousel {
   margin-bottom: 100px;
@@ -108,6 +118,25 @@ section div {
       width: 500px;
       height: 70px;
       margin-left: 180px; }
+
+.previo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-right: 170px;
+  margin-left: 100px; }
+
+.elementor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  grid-template-areas: ". ." ". ."; }
 
 /* comienzo card contacto */
 .contacto {
@@ -132,6 +161,22 @@ section div {
   margin-bottom: 20px;
   justify-items: center; }
 
+.galeriagrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  margin: 0px;
+  padding: 0px;
+  grid-template-areas: ". . ." ". . ." ". . ."; }
+
+.bordergaleria:hover {
+  border: none;
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+  margin: 0px; }
+
 h1 {
   font-size: 5vw;
   color: darkgoldenrod; }
@@ -147,9 +192,57 @@ h2 {
 h3 {
   color: darkgoldenrod; }
 
+h6 {
+  color: darkgoldenrod; }
+
+.nombres {
+  color: whitesmoke;
+  font-size: 15px; }
+
+.datos {
+  color: darkgoldenrod;
+  border-style: none;
+  font-size: 20px;
+  margin-bottom: 0px; }
+
+.title {
+  color: darkgoldenrod;
+  margin-bottom: 30px; }
+  .title p {
+    color: darkgoldenrod; }
+
+.texto {
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.image-rostros {
+  margin: 20px; }
+
+.testimonios {
+  border-style: none;
+  margin-bottom: 0px; }
+
+.test {
+  align-items: left;
+  font-size: 40px;
+  color: darkgoldenrod; }
+
+.confianza {
+  font-size: 50px; }
+
+.estadísticas {
+  color: darkgoldenrod; }
+
+.numero {
+  font-size: 60px; }
+
 /* texto nutrición */
 .frase {
   text-align: center; }
+
+.textonutri {
+  color: whitesmoke; }
 
 /* texto sobre nosotros */
 .frase2 {
@@ -162,6 +255,10 @@ h3 {
   font-weight: bold;
   color: whitesmoke;
   font-family: "Roboto", sans-serif; }
+
+/* texto contacto */
+.acercate {
+  margin-top: 40px; }
 
 .social {
   display: flex;
@@ -196,7 +293,8 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
     grid-template-areas: "." "." "." "." "." "."; }
   h2 {
     align-items: center; }
@@ -215,7 +313,9 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
+    gap: 0px 0px;
+    margin: 0px;
+    grid-auto-flow: row;
     grid-template-areas: "." "." "." "." "." "."; }
   .p {
     font-size: 20px; }
@@ -228,7 +328,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 30px 30px;
+    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "." "." "." "." "." "."; }
   h2 {
@@ -239,14 +339,18 @@ h3 {
   p {
     font-size: 20px; }
   .social p {
-    display: none; } }
+    display: none; }
+  .textonutri {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px; } }
 
 @media screen and (max-width: 480px) {
   .container2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 30px 30px;
+    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "." "." "." "." "." "."; }
   h2 {
@@ -257,7 +361,11 @@ h3 {
   p {
     font-size: 20px; }
   .social p {
-    display: none; } }
+    display: none; }
+  .textonutri {
+    display: flex;
+    flex-direction: column;
+    margin: 0px; } }
 
 /* comienzo styles media query sobre nosotros */
 @media screen and (max-width: 480px) {
@@ -280,7 +388,17 @@ h3 {
     color: whitesmoke; }
   .textosumate p {
     font-size: 15px;
-    color: whitesmoke; } }
+    color: whitesmoke; }
+  .previo {
+    font-size: 15px;
+    display: list-item; }
+  .elementor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas: "." "." "." "."; } }
 
 @media screen and (max-width: 480px) {
   .carousel-item img {
@@ -292,7 +410,21 @@ h3 {
     color: whitesmoke; }
   .textosumate p {
     font-size: 15px;
-    color: whitesmoke; } }
+    color: whitesmoke; }
+  .previo {
+    font-size: 10px;
+    display: list-item;
+    margin: 0px; }
+  .elementor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    margin: 0px;
+    grid-template-areas: "." "." "." "."; }
+    .elementor .texto {
+      font-size: 20px; } }
 
 /* comienzo styles media query contacto */
 @media only screen and (max-width: 768px) {
@@ -301,13 +433,22 @@ h3 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     grid-template-areas: "." "."; }
   .mapa iframe {
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%; } }
+    width: 100%; }
+  .galeriagrid {
+    display: grid;
+    align-content: center;
+    margin-left: 150px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "." "." "." "." "." "." "." "."; } }
 
 @media screen and (max-width: 480px) {
   .container6 {
@@ -315,13 +456,21 @@ h3 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     grid-template-areas: "." "."; }
   .mapa iframe {
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%; } }
+    width: 100%; }
+  .galeriagrid {
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "." "." "." "." "." "." "." "."; } }
 
 * {
   margin: 0;

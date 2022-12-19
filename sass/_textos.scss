@@ -17,7 +17,67 @@ h3{
     color: $secondarycolor;
     }
     
+h6{
+    color: $secondarycolor
+}
 
+
+
+.nombres{
+        color: $thirdcolor;
+        font-size: 15px;
+    }     
+
+
+
+.datos{
+color: $secondarycolor;
+border-style: none;
+font-size: 20px;
+margin-bottom: 0px;
+}
+
+
+.title{
+    color: $secondarycolor;
+    margin-bottom: 30px;
+    p{
+      color: $secondarycolor  
+    }    
+}
+    
+.texto{
+    color: $thirdcolor; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image-rostros{
+    margin: 20px;
+}
+
+.testimonios{
+    border-style: none;
+    margin-bottom: 0px;
+}
+
+.test{
+    align-items: left;
+    font-size: 40px;
+    color:$secondarycolor
+}
+
+.confianza{
+    font-size: 50px;
+}
+
+.estadísticas{
+    color: $secondarycolor;
+}
+
+.numero{
+    font-size: 60px;
+}
 
 /* texto nutrición */
 
@@ -25,6 +85,9 @@ h3{
 text-align: center;
 }
 
+.textonutri{
+    color: $thirdcolor;
+}
 
 /* texto sobre nosotros */
 
@@ -39,7 +102,12 @@ text-align: center;
     background-color: $primarycolor;
     opacity: 0.5;    
     font-weight: bold;
-    color:whitesmoke;
+    color: $thirdcolor;
     font-family: $primaryfont;
     }
   
+/* texto contacto */
+
+.acercate{
+    margin-top: 40px; 
+}
